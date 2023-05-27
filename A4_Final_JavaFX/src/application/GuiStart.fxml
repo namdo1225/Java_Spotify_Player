@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" prefHeight="528.0" prefWidth="799.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GuiStartController">
+   <children>
+      <Label fx:id="mainSongArtist" layoutX="61.0" layoutY="484.0" prefHeight="18.0" prefWidth="190.0" text="Song Artist">
+         <font>
+            <Font size="8.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchText" layoutX="14.0" layoutY="33.0" prefHeight="26.0" prefWidth="214.0" promptText="Song Name" />
+      <Button fx:id="hitButton" alignment="CENTER" layoutX="237.0" layoutY="33.0" mnemonicParsing="false" onMouseClicked="#buttonClicked" text="Search" />
+      <Button fx:id="firstButton" layoutX="92.0" layoutY="82.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playSong" text="Button" />
+      <Button fx:id="secondButton" layoutX="92.0" layoutY="112.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playSong" text="Button" />
+      <Button fx:id="thirdButton" layoutX="92.0" layoutY="142.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playSong" text="Button" />
+      <Button fx:id="fourthButton" layoutX="92.0" layoutY="172.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playSong" text="Button" />
+      <Button fx:id="fifthButton" layoutX="92.0" layoutY="202.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playSong" text="Button" />
+      <Button fx:id="sixthButton" layoutX="92.0" layoutY="232.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playSong" text="Button" />
+      <Button fx:id="seventhButton" layoutX="92.0" layoutY="262.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playSong" text="Button" />
+      <Button fx:id="eightButton" layoutX="92.0" layoutY="292.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playSong" text="Button" />
+      <Button fx:id="ninthButton" layoutX="92.0" layoutY="322.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playSong" text="Button" />
+      <Button fx:id="tenthButton" layoutX="92.0" layoutY="352.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playSong" text="Button" />
+      <ProgressBar fx:id="songProgress" layoutX="14.0" layoutY="446.0" onMouseClicked="#changeSongTime" onMouseDragged="#changeSongTime" prefHeight="10.0" prefWidth="770.0" progress="0.0" />
+      <ImageView fx:id="playPause" accessibleRole="BUTTON" fitHeight="44.0" fitWidth="40.0" layoutX="380.0" layoutY="466.0" onMouseClicked="#playPause" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/Play1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="68.0" layoutX="365.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cc_logo.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="25.0" layoutX="437.0" layoutY="473.0" onMouseClicked="#forward" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/forward10.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="25.0" layoutX="338.0" layoutY="471.0" onMouseClicked="#backward" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/backward10.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="83.0" layoutX="483.0" layoutY="473.0" onMouseClicked="#playNextSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/next_song.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="290.0" layoutY="470.0" onMouseClicked="#playPrevSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/prev_song.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="26.0" fitWidth="31.0" layoutX="658.0" layoutY="473.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/volume.PNG" />
+         </image>
+      </ImageView>
+      <ProgressBar fx:id="songVolume" layoutX="706.0" layoutY="477.0" onMouseClicked="#changeVolume" onMouseDragged="#changeVolume" prefHeight="18.0" prefWidth="78.0" progress="0.5" />
+      <ImageView fx:id="mainSongCover" fitHeight="34.0" fitWidth="40.0" layoutX="18.0" layoutY="467.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cover.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="mainSongTitle" layoutX="61.0" layoutY="467.0" prefHeight="18.0" prefWidth="197.0" text="Song Title">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="cover1" fitHeight="23.0" fitWidth="24.0" layoutX="57.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cover2" fitHeight="23.0" fitWidth="24.0" layoutX="57.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cover10" fitHeight="23.0" fitWidth="24.0" layoutX="57.0" layoutY="353.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cover9" fitHeight="23.0" fitWidth="24.0" layoutX="57.0" layoutY="323.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cover8" fitHeight="23.0" fitWidth="24.0" layoutX="57.0" layoutY="293.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cover7" fitHeight="23.0" fitWidth="24.0" layoutX="57.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cover6" fitHeight="23.0" fitWidth="24.0" layoutX="57.0" layoutY="233.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cover5" fitHeight="23.0" fitWidth="24.0" layoutX="57.0" layoutY="203.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cover4" fitHeight="23.0" fitWidth="24.0" layoutX="57.0" layoutY="173.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cover.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="cover3" fitHeight="23.0" fitWidth="24.0" layoutX="57.0" layoutY="143.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/cover.png" />
+         </image>
+      </ImageView>
+      <ScrollPane hbarPolicy="NEVER" layoutX="533.0" layoutY="132.0" prefHeight="250.0" prefWidth="250.0">
+        <content>
+          <AnchorPane fx:id="pane2" minHeight="0.0" minWidth="0.0" prefHeight="700.0" prefWidth="250.0">
+               <children>
+                  <ImageView fx:id="listCover1" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="listButton1" alignment="TOP_LEFT" layoutX="41.0" layoutY="10.0" maxWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="listDel1" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="10.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover2" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover20" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="580.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover19" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="550.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover18" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="520.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover17" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="490.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover16" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="460.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover15" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover14" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="400.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover13" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="370.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover12" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="340.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover11" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover10" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover9" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="250.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover8" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover7" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="190.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover6" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover5" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover4" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listCover3" fitHeight="23.0" fitWidth="24.0" layoutX="8.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/cover.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="listButton2" alignment="TOP_LEFT" layoutX="41.0" layoutY="40.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton20" alignment="TOP_LEFT" layoutX="41.0" layoutY="580.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton19" alignment="TOP_LEFT" layoutX="41.0" layoutY="550.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton18" alignment="TOP_LEFT" layoutX="41.0" layoutY="520.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton17" alignment="TOP_LEFT" layoutX="41.0" layoutY="490.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton16" alignment="TOP_LEFT" layoutX="41.0" layoutY="460.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton15" alignment="TOP_LEFT" layoutX="41.0" layoutY="430.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton14" alignment="TOP_LEFT" layoutX="41.0" layoutY="400.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton13" alignment="TOP_LEFT" layoutX="41.0" layoutY="370.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton12" alignment="TOP_LEFT" layoutX="41.0" layoutY="340.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton11" alignment="TOP_LEFT" layoutX="41.0" layoutY="310.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton10" alignment="TOP_LEFT" layoutX="41.0" layoutY="280.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton9" alignment="TOP_LEFT" layoutX="41.0" layoutY="250.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton8" alignment="TOP_LEFT" layoutX="41.0" layoutY="220.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton7" alignment="TOP_LEFT" layoutX="41.0" layoutY="190.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton6" alignment="TOP_LEFT" layoutX="41.0" layoutY="160.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton5" alignment="TOP_LEFT" layoutX="41.0" layoutY="130.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton4" alignment="TOP_LEFT" layoutX="41.0" layoutY="100.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="listButton3" alignment="TOP_LEFT" layoutX="41.0" layoutY="70.0" maxWidth="415.0" mnemonicParsing="false" onMouseClicked="#playPlaylistSong" prefHeight="26.0" prefWidth="155.0" text="Button" wrapText="true">
+                     <font>
+                        <Font size="6.0" />
+                     </font>
+                  </Button>
+                  <ImageView fx:id="listDel20" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="580.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel19" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="550.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel18" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="520.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel17" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="490.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel16" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="460.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel15" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="430.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel14" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="400.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel13" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="370.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel12" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="340.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel11" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="310.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel10" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="280.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel9" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="250.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel8" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="220.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel7" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="190.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel6" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="160.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel5" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="130.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel4" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="100.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel3" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="70.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="listDel2" fitHeight="23.0" fitWidth="24.0" layoutX="208.0" layoutY="40.0" onMouseClicked="#removeFromPlaylist" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../ui_images/del_from_playlist.PNG" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+        </content>
+      </ScrollPane>
+      <ImageView fx:id="add1" fitHeight="34.0" fitWidth="23.0" layoutX="17.0" layoutY="86.0" onMouseClicked="#addSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/save_to_playlist.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="add10" fitHeight="34.0" fitWidth="23.0" layoutX="17.0" layoutY="356.0" onMouseClicked="#addSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/save_to_playlist.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="add9" fitHeight="34.0" fitWidth="23.0" layoutX="17.0" layoutY="326.0" onMouseClicked="#addSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/save_to_playlist.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="add8" fitHeight="34.0" fitWidth="23.0" layoutX="17.0" layoutY="296.0" onMouseClicked="#addSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/save_to_playlist.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="add7" fitHeight="34.0" fitWidth="23.0" layoutX="17.0" layoutY="266.0" onMouseClicked="#addSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/save_to_playlist.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="add6" fitHeight="34.0" fitWidth="23.0" layoutX="17.0" layoutY="236.0" onMouseClicked="#addSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/save_to_playlist.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="add5" fitHeight="34.0" fitWidth="23.0" layoutX="17.0" layoutY="206.0" onMouseClicked="#addSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/save_to_playlist.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="add4" fitHeight="34.0" fitWidth="23.0" layoutX="17.0" layoutY="176.0" onMouseClicked="#addSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/save_to_playlist.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="add3" fitHeight="34.0" fitWidth="23.0" layoutX="17.0" layoutY="146.0" onMouseClicked="#addSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/save_to_playlist.PNG" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="add2" fitHeight="34.0" fitWidth="23.0" layoutX="17.0" layoutY="116.0" onMouseClicked="#addSong" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../ui_images/save_to_playlist.PNG" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="sortDropdown" layoutX="529.0" layoutY="33.0" prefHeight="26.0" prefWidth="253.0" />
+      <ComboBox fx:id="playlistDropdown" layoutX="528.0" layoutY="81.0" prefHeight="26.0" prefWidth="198.0" />
+      <ComboBox fx:id="playbackSpeed" layoutX="550.0" layoutY="473.0" prefHeight="10.0" prefWidth="68.0" />
+      <Button fx:id="iNeedName" layoutX="705.0" layoutY="398.0" mnemonicParsing="false" onMouseClicked="#newPlaylist" text="New Playlist" />
+      <TextField fx:id="playlistName" layoutX="531.0" layoutY="398.0" prefHeight="26.0" prefWidth="162.0" promptText="Playlist Name" />
+      <Label fx:id="songTimeLabel" layoutX="15.0" layoutY="424.0" prefHeight="18.0" prefWidth="68.0" text="0:00/0:00" />
+      <Button fx:id="iNeedAnother" layoutX="734.0" layoutY="81.0" mnemonicParsing="false" onMouseClicked="#deletePlaylist" text="Delete" />
+   </children>
+</AnchorPane>
