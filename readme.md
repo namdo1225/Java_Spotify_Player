@@ -1,5 +1,4 @@
 NOTE
-  - Branch for grading: master
   - Start application by running GuiStart.java
   - Developed and tested on Windows 10 and 11.
   - Please import A4_Final/A4_Final_JavaFX in Eclipse. Note that it might take a while to completely pull everything from GitHub.
@@ -12,13 +11,9 @@ RESOURCES USED
   - JavaFX      - UI Library - https://openjfx.io/
   - Spotify API - Songs are taken from Spotify - https://developer.spotify.com/
   - Images used for UI icons - Found through Google Search
-  - Trello      - https://trello.com/b/c4innTc9/%CC%B8%CC%84%CC%8Eh%CC%B5%CD%80%CD%97%C3%AA%CC%B7%CC%88%CD%84-%CC%B5%CC%88%CD%A0%C3%A7%CC%B7%CC%BE%CC%9A%C3%B0%CC%B7%CD%9D%CC%91%C3%B0%CC%B5%CC%BE%CC%BD%C3%AF%CC%B8%CD%83%CC%9B%C3%B1%CC%B6%CD%81%CD%84g%CC%B6%CC%85%CC%BF-%CC%B6%CC%BF%CC%8B%C3%A7%CC%B7%CD%81%CD%83r%CC%B4%CD%81%CD%A0%C3%AA%CC%B4%CC%82%CC%92w%CC%B4%CD%86%CC%8Cmusicplayerplanning
 
 AUTHORS - †̸̄̎h̵̀͗ê̷̈̈́ ̵̈͠Ç̷̾̚ð̷̑͝Ð̵̾̽ï̸̛̓ñ̶́̈́g̶̅̿ ̶̿̋Ḉ̷̓ŕ̴͠ê̴̂̒w̴͆̌	
   - JhihYang Wu
   - Andrew Hardy
   - Patrick Comden
   - Nam Do
-
-VIDEOS
-  - https://youtu.be/jT34AcmETWQ
