@@ -1,5 +1,5 @@
 NOTE
-  - This program uses the Spotify API to play tracks. Unfortunately, since it requires an account to use such API, we have deleted the account to avoid being charged or having our API tokens hacked.
+  - This program uses the Spotify API to play tracks. Unfortunately, since it requires an account to use such API, we have deleted the account to avoid being charged or having our API tokens compromised.
   - Start application by running GuiStart.java.
   - Developed and tested on Windows 10 and 11 using Eclipse IDE.
   - The music player streams songs, so you need **consistent** internet connection to use the music player.
