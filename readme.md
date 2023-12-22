@@ -1,18 +1,23 @@
-NOTE
-  - This program uses the Spotify API to play tracks. Unfortunately, since it requires an account to use such API, we have deleted the account to avoid being charged or having our API tokens compromised.
+# NOTE
+  - This program uses the Spotify API to play demo tracks from Spotify. Your favorite track might not be available depending on how it is configured on Spotify.
   - Start application by running GuiStart.java.
   - Developed and tested on Windows 10 and 11 using Eclipse IDE.
   - The music player streams songs, so you need **consistent** internet connection to use the music player.
-  - There will be some waiting and loading in the background as the API data is being retrieved. Note that the program might freeze and resume its normal operation afterward if you try to search/load songs without internet.
+  - The application will be blocked while waiting for the Spotify API to process.
   - There is a 20 tracks limit per playlist due to the fact that there are only 20 buttons variables set up. Since the Library is a playlist, this means that the library might not contain all the songs that another playlist has once the library reaches its limit.
 
-RESOURCES USED
-  - GSON        - Library to parse JSON objects returned from HTTP requests - https://github.com/google/gson
-  - JavaFX      - UI Library - https://openjfx.io/
-  - Spotify API - Songs are taken from Spotify - https://developer.spotify.com/
-  - Images used for UI icons - Found through Google Search
+# REDIRECTED HERE
+  - Are you redirected to this page? If the authorization happens sucessfully, your url should have a "code=" portion. Copy anything after that portion and return to the app!
 
-AUTHORS
+# RESOURCES USED
+  - GSON            - Library to parse JSON objects returned from HTTP requests - https://github.com/google/gson
+  - JavaFX          - UI Library - https://openjfx.io/
+  - Spotify API     - Songs are taken from Spotify - https://developer.spotify.com/
+  - Images used for UI icons - Found through Google Search
+  - [Ui icons created by Dwi ridwanto - Flaticon](https://www.flaticon.com/free-icons/ui)
+  - PCKE Java Code  - https://www.appsdeveloperblog.com/pkce-code-verifier-and-code-challenge-in-java/
+
+# AUTHORS
   - JhihYang Wu
   - Andrew Hardy
   - Patrick Comden

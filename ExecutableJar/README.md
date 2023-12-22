@@ -1,0 +1,2 @@
+To run:
+<JDK-17_JAVA.EXE> -p ".\Java_Spotify_Player_lib" --add-modules javafx.controls,javafx.base,javafx.fxml,javafx.graphics,javafx.media,javafx.web --add-opens=javafx.graphics/javafx.scene=ALL-UNNAMED --add-exports javafx.base/com.sun.javafx.event=ALL-UNNAMED -jar Java_Spotify_Player.jar
