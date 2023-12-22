@@ -1,4 +1,5 @@
 # NOTE
+  - Please use a JDK or JRE capable of running Java 17 (Class File Format Version 61).
   - This program uses the Spotify API to play demo tracks from Spotify. Your favorite track might not be available depending on how it is configured on Spotify.
   - Start application by running GuiStart.java.
   - Developed and tested on Windows 10 and 11 using Eclipse IDE.
