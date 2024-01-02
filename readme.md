@@ -29,25 +29,25 @@
 
 # Instructions to use:
 1. Click “Login”. You will be redirected to Spotify’s website.
-![Start the game picture](https://namdo1225.github.io/images/projects_media/20230526_sfml19/01_login.png)
+![Login into the app picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/00_login.png)
 
 2. Login to Spotify and click “Agree”.
-![Start the game picture](https://namdo1225.github.io/images/projects_media/20230526_sfml19/00_title.png)
+![Login into Spotify and grant authorization picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/01_agree.png)
 
 3. Grab the code from the URL.
-![Start the game picture](https://namdo1225.github.io/images/projects_media/20230526_sfml19/00_title.png)
+![Grab the code from URL picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/02_code.png)
 
 4. Copy the code into the app.
-![Start the game picture](https://namdo1225.github.io/images/projects_media/20230526_sfml19/00_title.png)
+![Copy the code into app picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/03_copy.png)
 
 5. You can now search for tracks if the provided code is correct.
-![Start the game picture](https://namdo1225.github.io/images/projects_media/20230526_sfml19/00_title.png)
+![Search for a song picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/04_search.png)
 
 6. You can play songs, change playback speed, adjust volume, etc.
-![Start the game picture](https://namdo1225.github.io/images/projects_media/20230526_sfml19/00_title.png)
+![Play a song picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/05_play.png)
 
 7. You can add songs to playlists.
-![Start the game picture](https://namdo1225.github.io/images/projects_media/20230526_sfml19/00_title.png)
+![Add songs to playlist picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/06_playlist.png)
 
 8. The red icon at the top right has instructions that can help you navigate through the app.
-![Start the game picture](https://namdo1225.github.io/images/projects_media/20230526_sfml19/00_title.png)
+![Help icon picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/07_instruction.png)
