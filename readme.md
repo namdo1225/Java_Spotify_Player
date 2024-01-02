@@ -32,6 +32,7 @@
 ![Login into the app picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/00_login.png)
 
 2. Login to Spotify and click “Agree”.
+
 ![Login into Spotify and grant authorization picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/01_agree.png)
 
 3. Grab the code from the URL.
