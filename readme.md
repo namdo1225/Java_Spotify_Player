@@ -3,7 +3,7 @@
 
 # NOTE
   - Your favorite track might not be available, depending on how it is configured on Spotify.
-  - Please use a JDK or JRE capable of running Java 17 (Class File Format Version 61).
+  - Please use a JDK or JRE capable of running Java 17 or later (Class File Format Version 61).
   - Start application by running GuiStart.java.
   - Developed and tested on Windows 10 and 11 using the Eclipse IDE.
   - The music player streams songs, so you need **consistent** internet connection to use the music player.
