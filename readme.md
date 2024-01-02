@@ -29,6 +29,7 @@
 
 # Instructions to use:
 1. Click “Login”. You will be redirected to Spotify’s website.
+
 ![Login into the app picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/00_login.png)
 
 2. Login to Spotify and click “Agree”.
@@ -36,19 +37,25 @@
 ![Login into Spotify and grant authorization picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/01_agree.png)
 
 3. Grab the code from the URL.
+
 ![Grab the code from URL picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/02_code.png)
 
 4. Copy the code into the app.
+
 ![Copy the code into app picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/03_copy.png)
 
 5. You can now search for tracks if the provided code is correct.
+
 ![Search for a song picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/04_search.png)
 
 6. You can play songs, change playback speed, adjust volume, etc.
+
 ![Play a song picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/05_play.png)
 
 7. You can add songs to playlists.
+
 ![Add songs to playlist picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/06_playlist.png)
 
 8. The red icon at the top right has instructions that can help you navigate through the app.
+
 ![Help icon picture](https://namdo1225.github.io/images/projects_media/20230526_demospotify/07_instruction.png)
